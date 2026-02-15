@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Joseph Kagai - Portfolio</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/Kagai Profile.jpeg" rel="icon">
+  <link href="assets/img/Kagai Profile.jpeg" rel="apple-touch-icon">
+<!-- AOS CSS -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+
+  <!-- =======================================================
+  * Template Name: iPortfolio
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Updated: Jun 29 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="assets/img/Kagai Profile.jpeg" alt="" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <!-- <img src="assets/img/logo.png" alt=""> -->
+      <h1 class="sitename">Joseph Kagai</h1>
+    </a>
+
+    <div class="social-links text-center">
+      <a href="https://x.com/Capo635" class="twitter"><i class="bi bi-twitter-x"></i></a>
+      <a href="https://github.com/Kagai-Joseph" class="facebook"><i class="bi bi-github"></i></a>
+      <a href="https://www.instagram.com/__kagai/?hl=en" class="instagram"><i class="bi bi-instagram"></i></a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
+        
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="main">
+
+   <!-- Hero Section -->
+<section id="hero" class="hero section dark-background">
+  <img src="assets/img/data.jpg" alt="" data-aos="fade-in" class="">
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <h2>Joseph Kagai</h2>
+    <p>I'm a <span class="typed" data-typed-items="Software Engineer, Web Developer, Problem Solver, UI/UX Designer, Frontend Developer, Fullstack Developer,Man United Fan">Software Engineer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+  </div>
+</section><!-- /Hero Section -->
+
+<style>
+  /* Background with elegant dark gradient */
+.about {
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  color: #fff;
+  padding: 80px 0;
+}
+
+/* Section title styling */
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-title h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffcc00;
+  position: relative;
+  display: inline-block;
+}
+
+/* About card with glassmorphism effect */
+.about-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+.about-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Image styling with hover effect */
+.about-image img {
+  width: 250px;
+  border-radius: 50%;
+  border: 5px solid #ffcc00;
+  transition: transform 0.4s ease-in-out;
+}
+
+.about-image img:hover {
+  transform: scale(1.1);
+}
+
+/* Content Styling */
+.about-content h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #ffcc00;
+}
+
+.about-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.about-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-content ul li {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.about-content ul li i {
+  color: #ffcc00;
+  margin-right: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .about-card {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+</style>
+<!-- About Section -->
+<!-- About Section -->
+<section id="about" class="about section">
+  <div class="container section-title" data-aos="fade-up">
+    <h2>About Me</h2>
+    <p>
+      Results-driven Software Engineer with expertise in backend development, CI/CD automation, and cloud deployment. Achieved a 30% reduction in API latency and improved deployment efficiency by 50%. Ready to enhance system performance and scalability.
+    </p>
+  </div>
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="about-card">
+      <div class="about-image" data-aos="zoom-in">
+        <img src="assets/img/Kagai Profile.jpeg" class="img-fluid" alt="Joseph Kagai">
+      </div>
+      <div class="about-content" data-aos="fade-left">
+        <h2>Backend Developer & DevOps Engineer</h2>
+        <p class="fst-italic">
+          Expert in building scalable applications with Python (Django, Flask, FastAPI), REST API design, CI/CD automation, cloud deployment, and containerization using Docker & Kubernetes.
+        </p>
+        <div class="row">
+          <div class="col-lg-6">
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>19 Sep 1997</span></li>
+              <li><i class="bi bi-chevron-right"></i> <strong>Skill:</strong> <span>Software Engineer</span></li>
+              <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+254704153629</span></li>
+              <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>28</span></li>
+              <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Master's in Information Technology</span></li>
+              <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>josephkagai635@gmail.com</span></li>
+              <li><i class="bi bi-chevron-right"></i> <strong>Expertise:</strong> <span>Backend Development & DevOps</span></li>
+            </ul>
+          </div>
+        </div>
+        <p>
+          I am dedicated to learning and growing as a developer, staying updated with the latest technologies 
+          to build impactful solutions. I am open to freelance projects and collaborations to turn innovative ideas into reality.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<style>
+  /* Stats Section - Dark Gradient Background */
+.stats {
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  color: #fff;
+  padding: 80px 0;
+  text-align: center;
+}
+
+/* Stats Item - Glassmorphism Effect */
+.stats-item {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+.stats-item:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Icon Styling */
+.stats-item i {
+  font-size: 3rem;
+  color: #ffcc00;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.stats-item:hover i {
+  transform: scale(1.2);
+}
+
+/* Counter Number */
+.stats-item span {
+  font-size: 2rem;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Stats Description */
+.stats-item p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.stats-item strong {
+  font-size: 1.2rem;
+  display: block;
+  color: #ffcc00;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .stats-item {
+    padding: 20px;
+  }
+}
+
+</style>
+   <!-- Stats Section -->
+<section id="stats" class="stats section">
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="row gy-4">
+    
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item" data-aos="zoom-in">
+          <i class="bi bi-emoji-smile"></i>
+          <span data-purecounter-start="0" data-purecounter-end="50" data-purecounter-duration="1" class="purecounter"></span>
+          <p><strong>Happy Clients</strong></p>
+        </div>
+      </div><!-- End Stats Item -->
+  
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item" data-aos="zoom-in" data-aos-delay="200">
+          <i class="bi bi-journal-richtext"></i>
+          <span data-purecounter-start="0" data-purecounter-end="30" data-purecounter-duration="1" class="purecounter"></span>
+          <p><strong>Projects</strong></p>
+        </div>
+      </div><!-- End Stats Item -->
+  
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item" data-aos="zoom-in" data-aos-delay="400">
+          <i class="bi bi-headset"></i>
+          <span data-purecounter-start="0" data-purecounter-end="1000" data-purecounter-duration="1" class="purecounter"></span>
+          <p><strong>Hours of Coding</strong></p>
+        </div>
+      </div><!-- End Stats Item -->
+  
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item" data-aos="zoom-in" data-aos-delay="600">
+          <i class="bi bi-people"></i>
+          <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1" class="purecounter"></span>
+          <p><strong>Collaborations</strong></p>
+        </div>
+      </div><!-- End Stats Item -->
+  
+    </div>
+  </div>
+</section>
+
+ <!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, // Animation duration
+    once: true, // Run only once
+  });
+</script>
+
+<!-- PureCounter.js -->
+<script src="https://cdn.jsdelivr.net/npm/purecounterjs@1.0.1/dist/purecounter_vanilla.js"></script>
+<script>
+  new PureCounter();
+</script>
+   
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Skills</h2>
+        <p>As a passionate software engineer, I continuously improve my skills to develop innovative and efficient solutions.</p>
+      </div>
+    
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row skills-grid">
+          
+          
+          <div class="skill-row">
+            <!-- Frontend Development -->
+            <div class="skill-card" data-aos="flip-left" data-aos-delay="150">
+              <img src="https://cdn-icons-png.flaticon.com/512/919/919851.png" alt="React Logo" class="skill-logo">
+              <h3>Frontend Development</h3>
+              <p>React, Bootstrap, JavaScript</p>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" style="width: 90%;"></div>
+              </div>
+              <span class="val">90%</span>
+            </div>
+          
+            <!-- Backend Development -->
+            <div class="skill-card" data-aos="flip-left" data-aos-delay="200">
+              <img src="https://cdn-icons-png.flaticon.com/512/919/919852.png" alt="Backend Logo" class="skill-logo">
+              <h3>Backend Development</h3>
+              <p>Python (Django, Flask, FastAPI), REST API Design</p>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" style="width: 92%;"></div>
+              </div>
+              <span class="val">92%</span>
+            </div>
+          </div>
+          
+          <div class="skill-row">
+            <!-- DevOps -->
+            <div class="skill-card" data-aos="flip-left" data-aos-delay="250">
+              <div class="icon">
+                <i class="bi bi-person-bounding-box"style="font-size: 2rem;"></i>
+              </div>
+              <h3>DevOps</h3>
+              <p>Docker, CI/CD, Git, Linux</p>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" style="width: 85%;"></div>
+              </div>
+              <span class="val">85%</span>
+            </div>
+          
+            <!-- Cloud Computing -->
+            <div class="skill-card" data-aos="flip-left" data-aos-delay="300">
+              <div class="icon cloud">
+                <i class="bi bi-cloud-arrow-up" style="font-size: 2rem;"></i>
+              </div>
+              <h3>Cloud Computing</h3>
+              <p>AWS, Google Cloud, Kubernetes</p>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" style="width: 80%;"></div>
+              </div>
+              <span class="val">80%</span>
+            </div>
+          </div>
+          
+          <div class="skill-row">
+            <!-- Database Management -->
+            <div class="skill-card" data-aos="flip-left" data-aos-delay="350">
+              <img src="https://cdn-icons-png.flaticon.com/512/919/919836.png" alt="Database Logo" class="skill-logo">
+              <h3>Database Management</h3>
+              <p>PostgreSQL, MySQL, MongoDB</p>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" style="width: 90%;"></div>
+              </div>
+              <span class="val">90%</span>
+            </div>
+          
+            <!-- AI & Data Science -->
+            <div class="skill-card" data-aos="flip-left" data-aos-delay="400">
+              <img src="https://cdn-icons-png.flaticon.com/512/919/919814.png" alt="AI Logo" class="skill-logo">
+              <h3>AI & Data Science</h3>
+              <p>Machine Learning, Data Analysis, NLP</p>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" style="width: 82%;"></div>
+              </div>
+              <span class="val">82%</span>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    
+    <style>
+      .skill-logo {
+        width: 60px; /* Resize logos */
+        height: auto;
+        margin-bottom: 10px;
+      }
+      .skills-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .skill-row {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+      }
+      .skill-card {
+        flex: 1;
+        text-align: center;
+      }
+    </style>
+    
+<!-- End Skills Section -->
+
+<!-- Resume Section -->
+<section id="resume" class="resume section" style="background-color: #121212; color: #f8f9fa; padding: 60px 0;">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up" style="text-align: center;">
+    <h2 style="color: #ffffff;">Resume</h2>
+    <p style="color: #d1d1d1;">A detail-oriented and passionate Software Engineer skilled in developing efficient, scalable, and user-friendly software solutions. Eager to contribute expertise in coding, problem-solving, and system design to create innovative products.</p>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+
+    <div class="row">
+
+      <!-- Summary and Education -->
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <h3 class="resume-title" style="color: #ffffff;">Summary</h3>
+        <div class="resume-item pb-0" style="background: #1e1e1e; padding: 20px; border-radius: 10px;">
+          <h4 style="color: #ffffff;">Joseph Kagai</h4>
+          <p style="color: #d1d1d1;"><em>Results-driven Software Engineer with expertise in backend development, CI/CD automation, and cloud deployment. Achieved a 30% reduction in API latency and improved deployment efficiency by 50%. Ready to enhance system performance and scalability.</em></p>
+          <ul style="color: #d1d1d1;">
+            <li>+254704153629</li>
+            <li>josephkagai635@gmail.com</li>
+          </ul>
+        </div><!-- End Resume Item -->
+
+        <h3 class="resume-title" style="color: #ffffff;">Education</h3>
+        <div class="resume-item" style="background: #1e1e1e; padding: 20px; border-radius: 10px;">
+          <h4 style="color: #ffffff;">Master of Science in Information Technology</h4>
+          <h5 style="color: #d1d1d1;">2016 - 2018</h5>
+          <p style="color: #d1d1d1;"><em>Multimedia University of Kenya</em></p>
+          <p style="color: #d1d1d1;">Completed advanced coursework in Cloud Computing, Database Systems, and Software Engineering.</p>
+        </div><!-- End Resume Item -->
+        <div class="resume-item" style="background: #1e1e1e; padding: 20px; border-radius: 10px;">
+          <h4 style="color: #ffffff;">Bachelor of Arts in Information Technology</h4>
+          <h5 style="color: #d1d1d1;">2012 - 2016</h5>
+          <p style="color: #d1d1d1;"><em>Multimedia University of Kenya</em></p>
+          <p style="color: #d1d1d1;">Graduated with honors, specializing in software development, data analysis, and system design. Relevant Coursework: Cloud Computing, Database Systems, Software Engineering.</p>
+        </div><!-- End Resume Item -->
+        <div class="resume-item" style="background: #1e1e1e; padding: 20px; border-radius: 10px;">
+          <h4 style="color: #ffffff;">Certifications & Licenses</h4>
+          <h5 style="color: #d1d1d1;">Professional Certifications</h5>
+          <ul style="color: #d1d1d1;">
+            <li><strong>Backend Web Development (Python, Django, Databases, Git, API)</strong> - Udemy<br>
+              <a href="https://www.udemy.com/share/105r5e3@iTGi8TEAb7EuI-xrTcnGLjofItffmbqUB86vfHnRR0dUm9AtBwTTg9o0sFAjhlrYAg==/" target="_blank" style="color: #4db8ff;">View Certificate</a>
+            </li>
+            <li><strong>Technical Support Fundamentals</strong> - Google Professional Certificate (May 2022 - June 2022)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Professional Experience -->
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+        <h3 class="resume-title" style="color: #ffffff;">Professional Experience</h3>
+        <div class="resume-item" style="background: #1e1e1e; padding: 20px; border-radius: 10px;">
+          <h4 style="color: #ffffff;">Software Engineer</h4>
+          <h5 style="color: #d1d1d1;">May 2024 - January 2026</h5>
+          <p style="color: #d1d1d1;"><em>Mcdave Holdings Limited</em></p>
+          <ul style="color: #d1d1d1;">
+            <li>Engineered scalable web applications for order management and production monitoring using Django REST Framework, reducing API latency by 30%.</li>
+            <li>Automated CI/CD pipelines with GitLab, cutting deployment time by 50% and improving release reliability.</li>
+            <li>Integrated payment gateways and third-party APIs (SMS, OAuth2) to streamline user workflows.</li>
+            <li>Deployed containerized applications on AWS with Docker and Kubernetes, achieving 99.9% uptime.</li>
+            <li>Reduced response time by 40% through asynchronous task management with Celery and RabbitMQ.</li>
+          </ul>
+        </div><!-- End Resume Item -->
+
+        <div class="resume-item" style="background: #1e1e1e; padding: 20px; border-radius: 10px;">
+          <h4 style="color: #ffffff;">Software Developer</h4>
+          <h5 style="color: #d1d1d1;">January 2023 - January 2024</h5>
+          <p style="color: #d1d1d1;"><em>Timwise Tech Solutions (Hybrid)</em></p>
+          <ul style="color: #d1d1d1;">
+            <li>Digitized manual processes with a Django-based Leave Management System, cutting errors by 60%.</li>
+            <li>Enhanced data protection compliance by 75% with a secure Payroll System featuring role-based access control.</li>
+            <li>Migrated legacy systems to Azure cloud, achieving 25% reduction in operational costs.</li>
+            <li>Resolved hardware and software issues for over 150 users within SLA timelines through technical support.</li>
+          </ul>
+        </div><!-- End Resume Item -->
+
+        <div class="resume-item" style="background: #1e1e1e; padding: 20px; border-radius: 10px;">
+          <h4 style="color: #ffffff;">Junior Software Engineer</h4>
+          <h5 style="color: #d1d1d1;">April 2020 - November 2022</h5>
+          <p style="color: #d1d1d1;"><em>Greenspace (Delmonte Contract)</em></p>
+          <ul style="color: #d1d1d1;">
+            <li>Automated production tracking with IoT sensors and Python scripts, increasing data collection efficiency by 44.7%.</li>
+            <li>Configured Linux servers for real-time analytics to enhance supply chain optimization.</li>
+            <li>Delivered technical support for over 150 users, resolving hardware and software issues within SLA timelines.</li>
+          </ul>
+        </div><!-- End Resume Item -->
+       
+        <style>
+          .download-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #007bff;
+            color: white;
+            padding: 15px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+          }
+      
+          .download-btn:hover {
+            background-color: #0056b3;
+          }
+        </style>
+        <a href="Full Resume...1.pdf" download="Joseph_Kagai_Resume.pdf" class="download-btn">
+          <i class="fas fa-download"></i> Download Resume
+        </a>
+         
+      </div>
+
+    </div>
+
+  </div>
+
+</section><!-- /Resume Section -->
+
+   
+<style>
+.card {
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-6px);
+}
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+}
+</style>
+
+    <!-- Portfolio Section -->
+<section id="portfolio" class="portfolio section light-background">
+  <div class="container section-title text-center" data-aos="fade-up">
+    <h2>Portfolio</h2>
+    <p>Explore a curated selection of software engineering projects that demonstrate my expertise in full-stack development, data analytics, and user-centered design.</p>
+  </div>
+
+  <div class="container">
+    <div class="row gy-4" data-aos="fade-up" data-aos-delay="200">
+
+      <!-- McDave Productions App -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card h-100 shadow-sm border-0">
+          <img src="assets/img/production.jpg" class="card-img-top" alt="McDave App">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">McDave Productions App</h5>
+            <p class="card-text">
+              A real-time manufacturing tracking system that automates reporting and optimizes workflows through a responsive dashboard.
+            </p>
+            <a href="https://production.mcdave.co.ke/" class="btn btn-primary mt-auto" target="_blank">View Project</a>
+          </div>
+        </div>
+      </div>
+        <!-- Order Management System -->
+<div class="col-lg-4 col-md-6">
+  <div class="card h-100 shadow-sm border-0">
+    <img src="https://qvalia.com/app/uploads/2022/11/Blog_post_Dashboard_1120x800_white.png" 
+         class="card-img-top" 
+         alt="Order Management System Dashboard">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">Order Management System</h5>
+      <p class="card-text">
+        A comprehensive web-based platform for managing customer orders, tracking sales, monitoring product availability, 
+        and generating real-time reports to streamline business operations.
+      </p>
+      <a href="https://www.zeliaoms.mcdave.co.ke" 
+         class="btn btn-primary mt-auto" 
+         target="_blank">
+         View Project
+      </a>
+    </div>
+  </div>
+</div>
+<!-- MoreInsight Data Analytics -->
+<div class="col-lg-4 col-md-6">
+  <div class="card h-100 shadow-sm border-0">
+    <img src="https://www.datylon.com/hs-fs/hubfs/Datylon%20Website2020/Blogs/The%205%20Best%20Data%20Visualization%20Dashboards/datylon-blog-The-5-Best-Data-Visualization-Dashboards-Exploring-Automated-Reporting-Solution-image3.png?height=640&name=datylon-blog-The-5-Best-Data-Visualization-Dashboards-Exploring-Automated-Reporting-Solution-image3.png&width=1200" 
+         class="card-img-top" 
+         alt="MoreInsight Data Analytics Dashboard">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">MoreInsight Data Analytics</h5>
+      <p class="card-text">
+        A full-featured data analytics and research platform designed for data-driven decision-making. 
+        It provides interactive dashboards, business intelligence reports, and advanced visualizations 
+        to uncover insights from complex datasets.
+      </p>
+      <a href="https://morinsight.co.ke/" 
+         class="btn btn-primary mt-auto" 
+         target="_blank">
+         View Project
+      </a>
+    </div>
+  </div>
+</div>
+
+      
+
+      <!-- AI News Aggregator -->
+      <!-- AI News Aggregator -->
+<div class="col-lg-4 col-md-6">
+  <div class="card h-100 shadow-sm border-0">
+    <img src="https://training.wkustudentpubs.com/wp-content/uploads/2022/04/2-1-1024x576.png" 
+         class="card-img-top" 
+         alt="AI News Aggregator Dashboard">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">AI News Aggregator</h5>
+      <p class="card-text">
+        A smart platform that aggregates and analyzes global news using AI, NLP, and real-time data streams 
+        to deliver personalized headlines and topic insights.
+      </p>
+      <a href="https://v0-news-aggregator-webapp.vercel.app/" 
+         class="btn btn-primary mt-auto" 
+         target="_blank">
+         View Project
+      </a>
+    </div>
+  </div>
+</div>
+
+
+      <!-- TechStrips Company Site -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card h-100 shadow-sm border-0">
+          <img src="assets/img/tech.jpg" class="card-img-top" alt="TechStrips Site">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">TechStrips Company</h5>
+            <p class="card-text">
+              A modern corporate site developed with Django and Bootstrap, showcasing the company's services and technological expertise.
+            </p>
+            <a href="https://techstrips-production.up.railway.app" class="btn btn-primary mt-auto" target="_blank">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hotel Destinations App -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card h-100 shadow-sm border-0">
+          <img src="https://picsum.photos/seed/foodapp/400/300" class="card-img-top" alt="Hotel Destinations">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Hotel Destinations</h5>
+            <p class="card-text">
+              Travel website for RwandAir Holidays featuring dynamic hotel listings and booking features built with React and Bootstrap.
+            </p>
+            <a href="https://rwandair-holidays.vercel.app/" class="btn btn-primary mt-auto" target="_blank">View Project</a>
+          </div>
+        </div>
+      </div>
+  <!-- Amaica Media Website -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card h-100 shadow-sm border-0">
+          <img src="assets/img/journalism.jpg" class="card-img-top" alt="Amaica Media">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Media Company Website</h5>
+            <p class="card-text">
+              Built for Amaica Group, this platform enables digital broadcasting and real-time content management for modern journalism.
+            </p>
+            <a href="https://amaica-production.up.railway.app" class="btn btn-primary mt-auto" target="_blank">View Project</a>
+          </div>
+        </div>
+      </div>
+      <!-- Mobile Finance Analytics App -->
+<div class="col-lg-4 col-md-6">
+  <div class="card h-100 shadow-sm border-0">
+    <img src="https://cdn.dribbble.com/userupload/6377165/file/original-ab6e3668cd5c9a2945683e0cd43a4cd0.png?resize=752x&vertical=center" 
+         class="card-img-top" 
+         alt="Mobile Finance Analytics App">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">Mobile Finance Analytics App</h5>
+      <p class="card-text">
+        A mobile application that provides real-time financial analytics, budget tracking, 
+        and personalized insights for smarter financial decisions on the go.
+      </p>
+    </div>
+  </div>
+</div>
+
+      <!-- Analytics Dashboard -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card h-100 shadow-sm border-0">
+          <img src="assets/img/pos.jpg" class="card-img-top" alt="Analytics Dashboard">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">POS</h5>
+            <p class="card-text">
+              A real-time pos system dashboard with advanced visualizations,payment gateways and performance metrics for operational insights.
+            </p>
+            <a href="https://www.pesa.cynet.co.ke/" class="btn btn-primary mt-auto" target="_blank">View Project</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    <!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, // Animation duration
+    once: true, // Run only once
+  });
+</script>
+
+    <script src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/glightbox@3.0.5/dist/js/glightbox.min.js"></script>
+<script>
+  // Initialize Isotope for filtering
+  var iso = new Isotope('.isotope-container', {
+    itemSelector: '.portfolio-item',
+    layoutMode: 'masonry',
+    getSortData: {
+      name: '.portfolio-info h4',
+    }
+  });
+
+  // Initialize GLightbox for image preview
+  const lightbox = GLightbox({
+    selector: '.glightbox',
+  });
+</script>
+<style>
+  .services .service-item {
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .services .service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-card {
+    background:  rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .service-card .icon {
+    font-size: 40px;
+    color: #007BFF;
+    margin-bottom: 20px;
+  }
+  
+  .service-card .title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .service-card .description {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .services .section-title h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .services .section-title .subtitle {
+    font-size: 1.125rem;
+    color: #777;
+    margin-top: 10px;
+  }
+  
+  @media (max-width: 767px) {
+    .service-card {
+      padding: 20px;
+    }
+  
+    .service-card .icon {
+      font-size: 35px;
+    }
+  
+    .services .section-title h2 {
+      font-size: 2rem;
+    }
+  }
+  
+</style>
+
+  <!-- Services Section -->
+<section id="services" class="services section">
+  <!-- Section Title -->
+  <div class="container section-title text-center" data-aos="fade-up">
+    <h2 class="title">IT Services/Skills</h2>
+    <p class="subtitle">A wide range of IT solutions designed to meet your business needs. From software development to IT support, we provide innovative and efficient services to help you achieve your goals.</p>
+  </div>
+  <!-- End Section Title -->
+
+  <div class="container">
+    <div class="row gy-4">
+
+      <!-- Service Item -->
+      <div class="col-lg-4 col-md-6 service-item" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-card">
+          <div class="icon">
+            <i class="bi bi-code-slash"></i>
+          </div>
+          <div class="service-info">
+            <h4 class="title"><a href="#">Software Development</a></h4>
+            <p class="description">Custom software solutions tailored to your business needs, ensuring seamless functionality and scalability.</p>
+          </div>
+        </div>
+      </div>
+      <!-- End Service Item -->
+
+      <!-- Service Item -->
+      <div class="col-lg-4 col-md-6 service-item" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-card">
+          <div class="icon">
+            <i class="bi bi-globe"></i>
+          </div>
+          <div class="service-info">
+            <h4 class="title"><a href="#">Web Development</a></h4>
+            <p class="description">Modern, responsive, and user-friendly websites that enhance your online presence and drive engagement.</p>
+          </div>
+        </div>
+      </div>
+      <!-- End Service Item -->
+
+      <!-- Service Item -->
+      <div class="col-lg-4 col-md-6 service-item" data-aos="fade-up" data-aos-delay="300">
+        <div class="service-card">
+          <div class="icon">
+            <i class="bi bi-headset"></i>
+          </div>
+          <div class="service-info">
+            <h4 class="title"><a href="#">IT Support</a></h4>
+            <p class="description">Comprehensive IT support and maintenance services to keep your systems running smoothly.</p>
+          </div>
+        </div>
+      </div>
+      <!-- End Service Item -->
+
+      <!-- Service Item -->
+      <div class="col-lg-4 col-md-6 service-item" data-aos="fade-up" data-aos-delay="400">
+        <div class="service-card">
+          <div class="icon">
+            <i class="bi bi-shield-lock"></i>
+          </div>
+          <div class="service-info">
+            <h4 class="title"><a href="#">Cybersecurity</a></h4>
+            <p class="description">Advanced cybersecurity solutions to protect your business from threats and vulnerabilities.</p>
+          </div>
+        </div>
+      </div>
+      <!-- End Service Item -->
+
+      <!-- Service Item -->
+      <div class="col-lg-4 col-md-6 service-item" data-aos="fade-up" data-aos-delay="500">
+        <div class="service-card">
+          <div class="icon">
+            <i class="bi bi-cloud-arrow-up"></i>
+          </div>
+          <div class="service-info">
+            <h4 class="title"><a href="#">Cloud Solutions</a></h4>
+            <p class="description">Cloud migration, integration, and management services to enhance your business efficiency.</p>
+          </div>
+        </div>
+      </div>
+      <!-- End Service Item -->
+
+      <!-- Service Item -->
+      <div class="col-lg-4 col-md-6 service-item" data-aos="fade-up" data-aos-delay="600">
+        <div class="service-card">
+          <div class="icon">
+            <i class="bi bi-person-bounding-box"></i>
+          </div>
+          <div class="service-info">
+            <h4 class="title"><a href="#">IT Consulting</a></h4>
+            <p class="description">Expert advice and strategies to align your IT infrastructure with your business goals.</p>
+          </div>
+        </div>
+      </div>
+      <!-- End Service Item -->
+
+    </div>
+  </div>
+
+</section>
+<!-- End Services Section -->
+
+    
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Testimonials</h2>
+        <p class="lead text-muted">customers' feedback drives my innovation and commitment to excellence.</p>
+  
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 40
+                },
+                "1200": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 1
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>The smoothness and efficiency of their services have truly exceeded our expectations. They are highly reliable and always deliver on time.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/mara.jpg" class="testimonial-img" alt="">
+                <h3>David Maradona</h3>
+                <h4>customer</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>A reliable service provider who ensures that every project is completed to the highest standards. I have never been disappointed.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                <h3>Duran Aroni</h3>
+                <h4>customer</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            
+
+            
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Their service was truly top-notch. They were always there to help, and their professionalism was outstanding.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                <h3>John Larson</h3>
+                <h4>Entrepreneur</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section bg-light py-5">
+
+      <!-- Section Title -->
+      <div class="container section-title text-center mb-5" data-aos="fade-up">
+        <h2 class="display-4 font-weight-bold text-dark">Contact Me</h2>
+        <p class="lead text-muted">Have any questions or need assistance? I'M here to help! Reach out to me and i'll get back to you.</p>
+      </div><!-- End Section Title -->
+    
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4">
+    
+          <!-- Contact Info -->
+          <div class="col-lg-5 mx-auto" data-aos="fade-up" data-aos-delay="200">
+            <div class="info-wrap shadow-lg p-4 rounded bg-white">
+              <!-- End Info Item -->
+    
+              <div class="info-item d-flex mb-4" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-telephone flex-shrink-0 fs-3 text-primary"></i>
+                <div class="ms-3">
+                  <h5 class="mb-1">Call me</h5>
+                  <p class="text-muted">+254704153629</p>
+                </div>
+              </div><!-- End Info Item -->
+    
+              <div class="info-item d-flex mb-4" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-envelope flex-shrink-0 fs-3 text-primary"></i>
+                <div class="ms-3">
+                  <h5 class="mb-1">Email Me</h5>
+                  <p class="text-muted">
+                    <a href="mailto:josephkagai635@gmail.com" class="text-muted text-decoration-none">
+                      josephkagai635@gmail.com
+                    </a>
+                  </p>
+                </div>
+              </div><!-- End Info Item -->
+    
+              <!-- Google Maps Embed -->
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15934.253978095263!2d36.8039198809298!3d-1.3316367551978924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f4ba466727cb7%3A0xd05730b0c12338b0!2sMultimedia%20University%20of%20Kenya!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div><!-- End Contact Info -->
+          
+          <script>
+            function sendMail() {
+                var name = document.getElementById("name").value;
+                var email = document.getElementById("email").value;
+                var subject = document.getElementById("subject").value;
+                var message = document.getElementById("message").value;
+
+                emailjs.send("service_lme9q9d", "template_n6xdi5b", {
+                    from_name: name,
+                    from_email: email,
+                    subject: subject,
+                    message: message
+                })
+                .then(function(response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    alert("Message sent successfully!");
+                }, function(error) {
+                    console.log('FAILED...', error);
+                    alert("Failed to send message. Please try again.");
+                });
+            }
+        
+
+          </script>
+           
+        
+    
+        </div>
+      </div>
+    
+    </section><!-- End Contact Section -->
+    
+
+  </main>
+  
+  <footer id="footer" class="footer position-relative light-background py-4">
+    <div class="container text-center">
+        <div class="row">
+            <!-- Copyright Section -->
+            <div class="col-12 col-md-6 mb-3 mb-md-0">
+                <p class="mb-0">© <span id="current-year"></span> <strong class="px-1 sitename">Portfolio</strong> All Rights Reserved</p>
+            </div>
+
+            <!-- Credits Section -->
+            <div class="col-12 col-md-6">
+                <p class="mb-0">Designed by <a href="https://techstrips-production.up.railway.app" target="_blank">Joseph Kagai</a></p>
+            </div>
+        </div>
+        
+        <!-- Social Media Links -->
+        <div class="social-links mt-4">
+            <a href="https://www.instagram.com/__kagai/?hl=en" class="social-icon text-primary me-3"><i class="bi bi-instagram"></i></a>
+            <a href="https://x.com/Capo635" class="social-icon text-primary me-3"><i class="bi bi-twitter"></i></a>
+            <a href="https://linkedin.com/in/joseph-kagai-227b94282" class="social-icon text-primary me-3"><i class="bi bi-linkedin"></i></a>
+            <a href="https://github.com/Kagai-Joseph" class="social-icon text-primary me-3"><i class="bi bi-github"></i></a>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Dynamically set the current year in the footer
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+</script>
+
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <!-- <div id="preloader"></div> -->
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
